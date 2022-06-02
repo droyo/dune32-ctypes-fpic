@@ -1,0 +1,218 @@
+# dune build --always-show-command
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /src/github.com/droyo/dune32-ctypes-fpic
+# Auto-detected concurrency: 16
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_3ccecf_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = Some External "/home/droyo/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = Ok External "/home/droyo/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/droyo/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/src/github.com/droyo/dune32-ctypes-fpic"
+#        ; "INSIDE_DUNE" :
+#            "/src/github.com/droyo/dune32-ctypes-fpic/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/src/github.com/droyo/dune32-ctypes-fpic/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/src/github.com/droyo/dune32-ctypes-fpic/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/src/github.com/droyo/dune32-ctypes-fpic/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path = [ External "/home/droyo/.opam/default/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.13.1"
+#      ; standard_library_default = "/usr/lib/ocaml"
+#      ; standard_library = "/usr/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-flto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-flto"
+#          ; "-ffat-lto-objects"
+#          ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-flto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-march=x86-64"
+#          ; "-mtune=generic"
+#          ; "-O2"
+#          ; "-pipe"
+#          ; "-fno-plt"
+#          ; "-fexceptions"
+#          ; "-Wp,-D_FORTIFY_SOURCE=2"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-fstack-clash-protection"
+#          ; "-fcf-protection"
+#          ; "-flto"
+#          ; "-ffat-lto-objects"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = false
+#      ; exec_magic_number = "Caml1999X030"
+#      ; cmi_magic_number = "Caml1999I030"
+#      ; cmo_magic_number = "Caml1999O030"
+#      ; cma_magic_number = "Caml1999A030"
+#      ; cmx_magic_number = "Caml1999Y030"
+#      ; cmxa_magic_number = "Caml1999Z030"
+#      ; ast_impl_magic_number = "Caml1999M030"
+#      ; ast_intf_magic_number = "Caml1999N030"
+#      ; cmxs_magic_number = "Caml1999D030"
+#      ; cmt_magic_number = "Caml1999T030"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I .mnl.objs/byte -no-alias-deps -opaque -o .mnl.objs/byte/mnl__.cmo -c -impl mnl__.ml-gen)
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl libmnl__ctypes_discover.ml) > _build/default/.mnl.objs/libmnl__ctypes_discover.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl libmnl__function_gen__c_stub__libmnl.ml) > _build/default/.mnl.objs/libmnl__function_gen__c_stub__libmnl.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl libmnl__type_gen.ml) > _build/default/.mnl.objs/libmnl__type_gen.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl types_generated.ml) > _build/default/.mnl.objs/types_generated.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl mnl.ml) > _build/default/.mnl.objs/mnl.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl c_stub.ml) > _build/default/.mnl.objs/c_stub.ml.d
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl c.ml) > _build/default/.mnl.objs/c.ml.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I .mnl.objs/byte -I .mnl.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o .mnl.objs/native/mnl__.cmx -c -impl mnl__.ml-gen)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__C_stub.cmo -c -impl c_stub.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/csexp -I /home/droyo/.opam/default/lib/dune-configurator -no-alias-deps -opaque -o .mnl.objs/byte/libmnl__ctypes_discover.cmo -c -impl libmnl__ctypes_discover.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__Libmnl__function_gen__c_stub__libmnl.cmo -c -impl libmnl__function_gen__c_stub__libmnl.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__Libmnl__type_gen.cmo -c -impl libmnl__type_gen.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__C_stub.cmx -c -impl c_stub.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/csexp -I /home/droyo/.opam/default/lib/dune-configurator -intf-suffix .ml -no-alias-deps -opaque -o .mnl.objs/native/libmnl__ctypes_discover.cmx -c -impl libmnl__ctypes_discover.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__Libmnl__function_gen__c_stub__libmnl.cmx -c -impl libmnl__function_gen__c_stub__libmnl.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__Libmnl__type_gen.cmx -c -impl libmnl__type_gen.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -o libmnl__ctypes_discover.exe /usr/lib/ocaml/unix.cmxa -I /usr/lib/ocaml /home/droyo/.opam/default/lib/csexp/csexp.cmxa /home/droyo/.opam/default/lib/dune-configurator/configurator.cmxa .mnl.objs/native/libmnl__ctypes_discover.cmx)
+$ (cd _build/default && ./libmnl__ctypes_discover.exe)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -o libmnl__type_gen.exe /home/droyo/.opam/default/lib/bigarray-compat/bigarray_compat.cmxa -I /usr/lib/ocaml /home/droyo/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/droyo/.opam/default/lib/integers/integers.cmxa -I /home/droyo/.opam/default/lib/integers /home/droyo/.opam/default/lib/ctypes/ctypes.cmxa -I /home/droyo/.opam/default/lib/ctypes /usr/lib/ocaml/str.cmxa -I /usr/lib/ocaml /home/droyo/.opam/default/lib/ctypes/cstubs.cmxa -I /home/droyo/.opam/default/lib/ctypes .mnl.objs/native/mnl__.cmx .mnl.objs/native/mnl__C_stub.cmx .mnl.objs/native/mnl__Libmnl__type_gen.cmx)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -o libmnl__function_gen__c_stub__libmnl.exe /home/droyo/.opam/default/lib/bigarray-compat/bigarray_compat.cmxa -I /usr/lib/ocaml /home/droyo/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/droyo/.opam/default/lib/integers/integers.cmxa -I /home/droyo/.opam/default/lib/integers /home/droyo/.opam/default/lib/ctypes/ctypes.cmxa -I /home/droyo/.opam/default/lib/ctypes /usr/lib/ocaml/str.cmxa -I /usr/lib/ocaml /home/droyo/.opam/default/lib/ctypes/cstubs.cmxa -I /home/droyo/.opam/default/lib/ctypes .mnl.objs/native/mnl__.cmx .mnl.objs/native/mnl__C_stub.cmx .mnl.objs/native/mnl__Libmnl__function_gen__c_stub__libmnl.cmx)
+$ (cd _build/default && ./libmnl__type_gen.exe) > _build/default/libmnl__c_cout_generated_types.c
+$ (cd _build/default && ./libmnl__function_gen__c_stub__libmnl.exe c libmnl_stubs) > _build/default/libmnl__c_cout_generated_functions__c_stub__libmnl.c
+$ (cd _build/default && ./libmnl__function_gen__c_stub__libmnl.exe ml libmnl_stubs) > _build/default/libmnl__c_generated_functions__c_stub__libmnl.ml
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl libmnl__c_generated_functions__c_stub__libmnl.ml) > _build/default/.mnl.objs/libmnl__c_generated_functions__c_stub__libmnl.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__Libmnl__c_generated_functions__c_stub__libmnl.cmo -c -impl libmnl__c_generated_functions__c_stub__libmnl.ml)
+$ (cd _build/default && /usr/bin/gcc -g -I /usr/lib/ocaml -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -o libmnl__c_cout_generated_functions__c_stub__libmnl.o -c libmnl__c_cout_generated_functions__c_stub__libmnl.c)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__Libmnl__c_generated_functions__c_stub__libmnl.cmx -c -impl libmnl__c_generated_functions__c_stub__libmnl.ml)
+$ (cd _build/default && /usr/bin/gcc -I /usr/lib/ocaml -I /home/droyo/.opam/default/lib/ctypes /src/github.com/droyo/dune32-ctypes-fpic/_build/default/libmnl__c_cout_generated_types.c -o /src/github.com/droyo/dune32-ctypes-fpic/_build/default/libmnl__c_cout_generated_types.exe)
+$ (cd _build/default && ./libmnl__c_cout_generated_types.exe) > _build/default/libmnl__c_generated_types.ml
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl libmnl__c_generated_types.ml) > _build/default/.mnl.objs/libmnl__c_generated_types.ml.d
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__Libmnl__c_generated_types.cmo -c -impl libmnl__c_generated_types.ml)
+$ (cd _build/default && /usr/bin/ocamlmklib.opt -g -o mnl_stubs libmnl__c_cout_generated_functions__c_stub__libmnl.o)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__Types_generated.cmo -c -impl types_generated.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl__C.cmo -c -impl c.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__Libmnl__c_generated_types.cmx -c -impl libmnl__c_generated_types.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__Types_generated.cmx -c -impl types_generated.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -bin-annot -I .mnl.objs/byte -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/byte/mnl.cmo -c -impl mnl.ml)
+$ (cd _build/default && /usr/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -a -o mnl.cma -dllib -lmnl_stubs -cclib -lmnl_stubs .mnl.objs/byte/mnl__.cmo .mnl.objs/byte/mnl__C_stub.cmo .mnl.objs/byte/mnl__Libmnl__c_generated_types.cmo .mnl.objs/byte/mnl__Types_generated.cmo .mnl.objs/byte/mnl__Libmnl__c_generated_functions__c_stub__libmnl.cmo .mnl.objs/byte/mnl__C.cmo .mnl.objs/byte/mnl.cmo -cclib -lmnl)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl__C.cmx -c -impl c.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -I .mnl.objs/byte -I .mnl.objs/native -I /home/droyo/.opam/default/lib/bigarray-compat -I /home/droyo/.opam/default/lib/ctypes -I /home/droyo/.opam/default/lib/integers -I /home/droyo/.opam/default/lib/stdlib-shims -intf-suffix .ml -no-alias-deps -opaque -open Mnl__ -o .mnl.objs/native/mnl.cmx -c -impl mnl.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -a -o mnl.cmxa -cclib -lmnl_stubs .mnl.objs/native/mnl__.cmx .mnl.objs/native/mnl__C_stub.cmx .mnl.objs/native/mnl__Libmnl__c_generated_types.cmx .mnl.objs/native/mnl__Types_generated.cmx .mnl.objs/native/mnl__Libmnl__c_generated_functions__c_stub__libmnl.cmx .mnl.objs/native/mnl__C.cmx .mnl.objs/native/mnl.cmx -cclib -lmnl)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -9-27 -g -shared -linkall -I . -o mnl.cmxs mnl.cmxa)
