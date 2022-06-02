@@ -1,0 +1,16 @@
+(library
+ (name mnl)
+ (flags (:standard -w -9-27))
+ (ctypes
+  (external_library_name libmnl)
+  (headers (include "libmnl/libmnl.h"))
+
+  (type_description
+   (instance Const)
+   (functor c_stub))
+
+  (function_description
+   (instance Libmnl)
+   (functor c_stub))
+
+  (generated_entry_point C)))
